@@ -1,0 +1,72 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Menu Driven
+        </title>
+        <style>
+            
+            body{
+                background-image: linear-gradient(black, white);
+                
+            }
+            center{
+                color: azure;
+            }
+            
+
+                button {
+                  width: 20%;
+                  background-color: gold;
+                  color:black;
+                    font-size: 20px;
+                
+                  padding: 14px 20px;
+                  margin: 8px 0;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                }
+
+               button:hover {
+                  background-color: burlywood;
+                }
+        </style>
+    </head>
+<body>
+
+<center style="font-size: 40px">
+    <strong>
+        JavaScript code for prompt asking :
+    </strong> 
+    <br>
+    
+        Enter Customer Name and display it in webpage with prefix Welcome.
+ 
+
+    <br><br>
+
+   
+
+    <button onclick="myFunction()" >Click to Enter Name:</button>
+
+    <p id="demo"></p>
+    
+</center>
+
+
+
+<script>
+function myFunction() {
+  var text="";
+   
+
+  var name =  prompt("Enter Customer Name:");
+    text="Welcome  "+name;
+
+   document.getElementById("demo").innerHTML = text; 
+}
+</script>
+
+</body>
+</html>

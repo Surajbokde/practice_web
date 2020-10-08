@@ -1,0 +1,105 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Menu Driven
+        </title>
+        <style>
+            
+            body{
+                background-image: linear-gradient(black, white);
+                
+            }
+            center{
+                color: azure;
+            }
+            input[type=text] {
+                  width: 40%;
+                  padding: 12px 20px;
+                  margin: 8px 0;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                  font-size: 20px;  
+                }
+
+                button {
+                  width: 20%;
+                  background-color: gold;
+                  color:black;
+                    font-size: 20px;
+                
+                  padding: 14px 20px;
+                  margin: 8px 0;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                }
+
+               button:hover {
+                  background-color: burlywood;
+                }
+        </style>
+    </head>
+<body>
+
+<center style="font-size: 40px">
+    <strong>
+        Menu driven program to perform the following options using JavaScript:
+    </strong> 
+    <br>
+    1. Swapping of two number without using third variable.
+    <br>
+
+    2. To print sum of the digit of a number.<br><br>
+
+    <input id="input_choice" type="text" placeholder="Enter your choice"><br>
+
+    <button onclick="myFunction()" >Submit</button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+</center>
+
+
+
+<script>
+function myFunction() {
+  var text="";
+    var text1="";
+
+  var number = document.getElementById("input_choice").value;
+
+  switch(number) {
+    case "1":
+        var n1 = prompt("Enter first number");
+          
+        var n2 = prompt("Enter second number");
+        text="Before swap n1="+n1+"    n2="+n2;
+          n1=n1^n2;
+          n2=n2^n1;
+          n1=n1^n2;
+          text1="After swap n1="+n1+"    n2="+n2;
+        
+    break;
+    case "2":
+        var n1 = prompt("Enter Number");
+        var n=0;
+          while(n1){
+              n+=(n1%10);
+              n1=(n1/10);
+              n1=Math.floor(n1);
+          }
+        text="Sum of digit of a number is:"+n;
+    break;
+    default:
+    text = "Wrong choice";
+  }
+  document.getElementById("demo").innerHTML = text;
+    document.getElementById("demo1").innerHTML = text1;
+}
+</script>
+
+</body>
+</html>
