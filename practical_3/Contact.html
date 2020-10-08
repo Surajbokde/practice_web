@@ -1,0 +1,414 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<style>
+   
+h2{
+ font-family: Sans-serif; 
+ font-size: 24px;     
+ font-style: normal; 
+ font-weight: bold; 
+ color: blue;
+ text-align: center; 
+ text-decoration: underline
+}
+   
+table{
+ font-family: verdana; 
+ color:white; 
+ font-size: 16px; 
+ font-style: normal;
+ font-weight: bold;
+ background: linear-gradient(to bottom, #3b3839 0%, #9074d6 100%);  
+ border-collapse: collapse; 
+ border: 4px solid #000000;
+ border-style: dashed;
+  
+}
+    #table2{
+        font-family: verdana; 
+ color:ghostwhite; 
+ font-size: 16px; 
+ font-style: normal;
+ font-weight: bold;
+ background: none;  
+ border-collapse: collapse; 
+ border: none;
+ 
+    }
+table.inner{
+ border: 10px
+}
+input[type=text], input[type=email], input[type=number], input[type=date] {
+ 
+ padding: 6px 12px;
+ margin: 5px 0;
+
+}
+input[type=submit], input[type=reset]{
+ 
+ padding: 8px 12px;
+ margin: 5px 0;
+
+}
+div {
+    border-radius: 25px;
+     border: 5px solid black;
+  background-color: #9074d6;
+  width: 90%;
+
+ 
+  padding: 0px;
+  margin: 20px;
+}
+    body{
+        
+        background-image: url(img.jpg);
+         background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+    
+</style>
+</head>
+<body>
+    <center> <div><h1>Student Registration Form </h1>
+             <h3>Fill the form</h3></div>
+    </center>
+    <form action="results.html" method="get">
+        <table align="center" cellpadding = "10">
+
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="FirstName" maxlength="50" placeholder="first name" />
+
+                </td>
+            
+                <td>Last Name</td>
+                <td><input type="text" name="LastName" maxlength="50" placeholder="last name"/>
+                
+                </td>
+            </tr>
+             <tr>
+                <td>Address<br /></td>
+                <td colspan="1">
+                <input type="text" name="add." maxlength="100" placeholder="line 1"/>
+                 </td><td> <input type="text" name="add." maxlength="100" placeholder="line 2"/>
+
+        
+
+               
+
+                </td>
+                 <td> <input type="text" name="add." maxlength="100" placeholder="line 3"/>
+
+        
+
+               
+
+                </td>
+                </tr>
+                <tr>
+                <td>Email ID 1</td>
+                <td colspan="1"><input type="email" name="EmailID" maxlength="100" placeholder="xyz@gmail.com"/></td>
+               
+                <td>Email ID 2(Optional)</td>
+                <td><input type="email" name="EmailID2" maxlength="100" placeholder="xyz2@gmail.com"/></td>
+                </tr>
+
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                <input type="text" name="MobileNumber" maxlength="10" placeholder="+91"/>
+                
+                </td>
+          
+            <td>Date of Birth(DOB)</td>
+            <td><input type="date" id="birthdate" name="birthday" ></td> 
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                <input type="radio" name="Gender" value="Male" />
+                Male  </td><td>
+                <input type="radio" name="Gender" value="Female" />
+                Female</td><td>
+                 <input type="radio" name="Gender" value="Other" />
+                Other
+                </td>
+            </tr>
+
+            
+
+
+            
+            
+            <tr>
+            <td>State</td>
+            <td> <select name="state" id="state" class="form-control">
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                </select>
+            
+   
+            </td>
+            
+            <td>City</td>
+            <td><input type="text" name="City" maxlength="50" placeholder="Your city"/>
+
+            </td>
+            </tr>
+
+            <tr>
+            <td colspan="1">Pin Code</td>
+            <td colspan="1"><input type="Number" name="PinCode" maxlength="6" placeholder="440022"/>
+
+            </td>
+                <td>
+                Upload Photo
+                </td>
+                <td>
+                <input type="file" id="myFile" name="filename" placeholder="choose photo">
+               
+                </td>
+            </tr>
+            
+
+          
+
+            <tr>
+            <td>Language Known <br /><br /><br /></td>
+            <td colspan="1">
+            <input type="checkbox" name="Hindi" value="Hindi" />
+            hindi<br>
+            <input type="checkbox" name="English" value="English" />
+            English<br>
+            <input type="checkbox" name="German" value="German" />
+            German<br>
+
+            
+                </td>
+                <td>Others</td>
+                <td colspan="1">
+            
+            <input type="text" name="Other" maxlength="50" placeholder="Marathi" />
+
+            </td>
+            </tr>
+
+
+            
+
+                <tr>
+             <td>Additional Information<br /><br /><br /></td>
+             <td colspan="3"><textarea name="additionalinfo" rows="5" cols="80"></textarea></td>
+             </tr>
+                
+            
+            <tr>
+            <td colspan="4">
+                <center>
+                <table id="table2">
+                    <th>Semester</th>        
+                    <th>total credit</th>
+                    <th>credit earn</th>
+                    <th>credit balanced</th>
+                    <th>SGPA</th>
+                    <tr>
+                        <td>sem-1</td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        
+                    </tr>
+                       <tr>
+                        <td>sem-2</td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        
+                    </tr>
+                       <tr>
+                        <td>sem-3</td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        
+                    </tr>
+                       <tr>
+                        <td>sem-4</td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        
+                    </tr>
+                       <tr>
+                        <td>sem-5</td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        
+                    </tr>
+                       <tr>
+                        <td>sem-6</td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="40" placeholder="NA" />
+
+                        </td>
+                        <td colspan="1">
+            
+                            <input type="text"  maxlength="50" placeholder="NA" />
+
+                        </td>
+                        
+                    </tr>
+                    
+                    
+                
+                </table>
+                </center>
+                
+                </td>
+            </tr>
+                <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit"></td>
+                    <td colspan="2" align="center">
+                <input type="reset" value="Reset">
+                </td>
+                </tr>
+</table>
+</form>
+</body>
+</html>
