@@ -8,3 +8,5 @@ Practical 2:link-- https://surajbokde.github.io/practice_web/PRACTICAL_2/page1.h
 Practical 3:link-- https://surajbokde.github.io/practice_web/practical_3/Contact.html
 
 Practical 4:link-- https://surajbokde.github.io/practice_web/Practical_4/contact.html
+
+Practical 5:link-- https://surajbokde.github.io/practice_web/Practical_5/index.html
