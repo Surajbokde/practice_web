@@ -1,0 +1,206 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>
+            Menu Driven
+        </title>
+        <style>
+            
+            .container{
+               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+              max-width: 650px;
+           
+             
+             margin-top: 37px;
+                margin-left: auto;
+                margin-right: auto;
+               
+            }
+            .box1,.box2{border: 2px solid pink;
+                text-align: center;
+            }
+            .box1{
+                
+                padding-top: 50px;
+                padding-bottom: 60px;
+                font-size: 70px;
+            }
+            .small{
+                font-size: 15px;
+                padding-left: 330px;
+            }
+            body{
+                background-image: linear-gradient(pink 30%, white 80%);
+                
+            }
+            center{
+                color: azure;
+            }
+            table{
+                font-size: 20px;
+            }
+            
+            input[type=radio]{
+                top: 9px;
+                
+                left: 9px;
+                width: 20px;
+                height: 20px;
+                
+            }
+            input[type=text] {
+                  width: 130%;
+                  padding: 8px 12px;
+                  margin: 8px 0;
+                  display: inline-block;
+                  border: 2px solid pink;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                  font-size: 18px;  
+                text-align: left;
+                }
+
+                button {
+                   
+                  width: 25%;
+                  background-color: lightpink;
+                  color:black;
+                    font-size: 20px;
+                
+                  padding: 14px 20px;
+                  margin: 8px 0;
+                  border: none;
+                  border-radius: 30px;
+                  cursor: pointer;
+                }
+
+               button:hover {
+                  background-color: papayawhip;
+                }
+        </style>
+    </head>
+<body>
+    <div class="container" >
+        <div class="box1">
+            <div class="heading">Student Details
+            <div class="small">
+            ~Feedback Form 
+            </div>
+        
+            </div>
+        </div>
+        <div class="box2">
+            <form>
+                <table align="center" cellpadding = "10">
+
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="Name" id="name" maxlength="50" placeholder="first name" required/>
+
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Email ID:</td>
+                <td ><input type="text" name="EmailID" maxlength="40" 
+                id="email" placeholder="xyz@ycce.in" required/></td>
+               
+                
+            </tr>
+
+            <tr>
+                <td>Mobile Number</td>
+                <td>
+                <input type="text" name="MobileNumber" maxlength="10" id="mobile" placeholder="+91" required/>
+                
+                </td>
+          
+            
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td>
+                <input type="radio" name="Gender" value="Male" 
+                       id="0"/>
+                Male  
+                <input type="radio" name="Gender" value="Female" id="1" />
+                Female
+                 <input type="radio" name="Gender" value="Other" id="2" />
+                Other
+                </td>
+            </tr>
+            <tr>
+                <td> Favorite  Color</td>
+                <td ><input type="text" name="color" maxlength="15" id="color" placeholder="Blue" required/></td>
+               
+                
+            </tr>
+                    
+            <tr>
+            <td colspan="2"><br><br>
+                <button onclick="submitform()">Submit</button> </td>      
+            </tr>
+        </table>
+
+
+            </form>
+        </div>
+        
+    
+    </div>
+    
+
+<script>
+             function submitform()
+             {
+                var gender;
+                 var flag=0;
+             	var name=document.getElementById('name').value;
+             	var mobile=document.getElementById('mobile').value;
+                var email=document.getElementById('email').value;
+               var color=document.getElementById('color').value;
+                 
+                if((mobile.length>0) & (!mobile.match(/^\d{10}$/))){
+                    alert("not valid mobile number");flag=1;
+                }
+                  if((email.length<=10) &(!email.match(/@gmail\.com$/))){
+                    alert("not valid gmail id");flag=1;
+                }
+                 if(!(/^[A-Za-z]+$/.test(color))){
+                     alert("not valid color");flag=1;
+                 }
+                  if(document.getElementById('0').checked){
+                	gender=document.getElementById('0').value;
+                    }
+                else if(document.getElementById('1').checked){
+                	gender=document.getElementById('1').value;
+                    }
+                else if(document.getElementById('2').checked){
+                	gender=document.getElementById('2').value;
+                    }
+                 else{
+                     alert("please select gender");flag=1;
+                 }
+              if(name.length==0){
+                  flag=1;
+              }
+              if(flag==1){
+             	document.write("<h1>THANKYOU ....</h1>");
+                document.write("<b>name :</b>"+name+"<br/>");
+                document.write("<b>mobile number :</b>"+mobile+"<br/>");
+                document.write("<b>email id :</b>"+email+"<br/>");
+                document.write("<b>gender :</b>"+gender+"<br/>");
+             	document.write("<b>favourite color :</b>"+color+"<br/>");
+                  document.write("<a href="index.html">submit another response</a>");
+             
+              }
+             }
+            
+            
+            
+            
+</script>
+
+</body>
+</html>
