@@ -164,11 +164,14 @@
                 if((mobile.length>0) & (!mobile.match(/^\d{10}$/))){
                     alert("not valid mobile number");flag=1;
                 }
-                  if((email.length<=10) &(!email.match(/@gmail\.com$/))){
+                  if((email.length<=10) &(email.length>0)&(!email.match(/@gmail\.com$/))){
                     alert("not valid gmail id");flag=1;
                 }
-                 if(!(/^[A-Za-z]+$/.test(color))){
+                 if(!(/^[A-Za-z]+$/.test(color))& (color.length>0)){
                      alert("not valid color");flag=1;
+                 }
+                 if(email.length>0 || color.length>0){
+                     flag=1;
                  }
                   if(document.getElementById('0').checked){
                 	gender=document.getElementById('0').value;
