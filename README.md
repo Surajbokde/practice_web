@@ -10,3 +10,5 @@ Practical 3:link-- https://surajbokde.github.io/practice_web/practical_3/Contact
 Practical 4:link-- https://surajbokde.github.io/practice_web/Practical_4/contact.html
 
 Practical 5:link-- https://surajbokde.github.io/practice_web/Practical_5/index.html
+
+Practical 6:link-- https://surajbokde.github.io/practice_web/Practical_6/
